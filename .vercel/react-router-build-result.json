@@ -1,0 +1,195 @@
+{
+  "buildManifest": {
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "layouts/index": {
+        "id": "layouts/index",
+        "parentId": "root",
+        "file": "./layouts/index.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "layouts/index",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "layouts/child-pages": {
+        "id": "layouts/child-pages",
+        "parentId": "layouts/index",
+        "file": "./layouts/child-pages.tsx"
+      },
+      "routes/advisory": {
+        "id": "routes/advisory",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/advisory.tsx",
+        "path": "advisory"
+      },
+      "routes/faq": {
+        "id": "routes/faq",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/faq.tsx",
+        "path": "faq"
+      },
+      "routes/packages/pick-up": {
+        "id": "routes/packages/pick-up",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/packages/pick-up.tsx",
+        "path": "packages/pick-up"
+      },
+      "routes/packages/delivery": {
+        "id": "routes/packages/delivery",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/packages/delivery.tsx",
+        "path": "packages/delivery"
+      },
+      "routes/appointment/index": {
+        "id": "routes/appointment/index",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/appointment/index.tsx",
+        "path": "appointment",
+        "index": true
+      },
+      "routes/appointment/confirmation": {
+        "id": "routes/appointment/confirmation",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/appointment/confirmation.tsx",
+        "path": "appointment/confirmation"
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/noah/Documents/digital-kiosk-sunshower/app",
+    "basename": "/",
+    "buildDirectory": "/Users/noah/Documents/digital-kiosk-sunshower/build",
+    "future": {
+      "v8_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "layouts/index": {
+        "id": "layouts/index",
+        "parentId": "root",
+        "file": "./layouts/index.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "layouts/index",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "layouts/child-pages": {
+        "id": "layouts/child-pages",
+        "parentId": "layouts/index",
+        "file": "./layouts/child-pages.tsx"
+      },
+      "routes/advisory": {
+        "id": "routes/advisory",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/advisory.tsx",
+        "path": "advisory"
+      },
+      "routes/faq": {
+        "id": "routes/faq",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/faq.tsx",
+        "path": "faq"
+      },
+      "routes/packages/pick-up": {
+        "id": "routes/packages/pick-up",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/packages/pick-up.tsx",
+        "path": "packages/pick-up"
+      },
+      "routes/packages/delivery": {
+        "id": "routes/packages/delivery",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/packages/delivery.tsx",
+        "path": "packages/delivery"
+      },
+      "routes/appointment/index": {
+        "id": "routes/appointment/index",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/appointment/index.tsx",
+        "path": "appointment",
+        "index": true
+      },
+      "routes/appointment/confirmation": {
+        "id": "routes/appointment/confirmation",
+        "parentId": "layouts/child-pages",
+        "file": "./routes/appointment/confirmation.tsx",
+        "path": "appointment/confirmation"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "initial"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": false,
+    "unstable_routeConfig": [
+      {
+        "id": "root",
+        "path": "",
+        "file": "root.tsx",
+        "children": [
+          {
+            "file": "./layouts/index.tsx",
+            "children": [
+              {
+                "file": "routes/home.tsx",
+                "index": true
+              },
+              {
+                "file": "./layouts/child-pages.tsx",
+                "children": [
+                  {
+                    "file": "./routes/advisory.tsx",
+                    "path": "advisory"
+                  },
+                  {
+                    "file": "./routes/faq.tsx",
+                    "path": "faq"
+                  },
+                  {
+                    "file": "./routes/packages/pick-up.tsx",
+                    "path": "packages/pick-up"
+                  },
+                  {
+                    "file": "./routes/packages/delivery.tsx",
+                    "path": "packages/delivery"
+                  },
+                  {
+                    "file": "./routes/appointment/index.tsx",
+                    "index": true,
+                    "path": "appointment"
+                  },
+                  {
+                    "file": "./routes/appointment/confirmation.tsx",
+                    "path": "appointment/confirmation"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}

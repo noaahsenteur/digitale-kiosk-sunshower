@@ -41,7 +41,7 @@ export default function Home() {
       </Button>
       <Button asChild className="w-full" size="lg">
         <NavLink to="/faq">
-          Veelgestelde vragen{" "}
+          Overige gesprek{" "}
           <CircleQuestionMark className="absolute right-5" size={32} />
         </NavLink>
       </Button>
