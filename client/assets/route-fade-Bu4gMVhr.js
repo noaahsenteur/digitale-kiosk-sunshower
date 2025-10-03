@@ -1,0 +1,1 @@
+import{t as o,p as s}from"./chunk-B7RQU5TL-DR632bcO.js";function n({children:e}){const t=o();return s.jsx("div",{className:"route-fade h-full flex flex-col justify-center",children:e},t.key)}export{n as R};
